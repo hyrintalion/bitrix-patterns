@@ -15,5 +15,5 @@
 
 #Доступы к админке
 
-login: admin
+login: admin<br>
 password: 123456
