@@ -4,7 +4,7 @@
 
 #Установка
 
-1. Импортируйте базу данных.
+1. Импортируйте базу данных из файла /sql/patterns.php.
 2. Переименуйте файлы 
     bitrix/.settings_for_install.php
     bitrix/php_interface/dbconn_for_install.php
