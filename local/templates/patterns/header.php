@@ -15,10 +15,10 @@ IncludeTemplateLangFile(__FILE__);
 	<meta name="author" content="">
 
 	<!-- Bootstrap Core CSS -->
-	<link href="sourses/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/sourses/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Custom CSS -->
-	<link href="sourses/css/business-casual.css" rel="stylesheet">
+	<link href="/sourses/css/business-casual.css" rel="stylesheet">
 
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -36,7 +36,7 @@ IncludeTemplateLangFile(__FILE__);
 <body>
 <?$APPLICATION->ShowPanel()?>
 
-<div class="brand">Business Casual</div>
+<div class="brand">Bitrix patterns</div>
 <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
 
 <!-- Navigation -->
@@ -51,25 +51,21 @@ IncludeTemplateLangFile(__FILE__);
 				<span class="icon-bar"></span>
 			</button>
 			<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-			<a class="navbar-brand" href="index.html">Business Casual</a>
+			<a class="navbar-brand" href="index.html">Bitrix patterns</a>
 		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="/about/">About</a>
-				</li>
-				<li>
-					<a href="/blog/">Blog</a>
-				</li>
-				<li>
-					<a href="/contact/">Contact</a>
-				</li>
-			</ul>
-		</div>
+		<?$APPLICATION->IncludeComponent("bitrix:menu","one_level_menu",Array(
+				"ROOT_MENU_TYPE" => "main",
+				"MAX_LEVEL" => "1",
+				"CHILD_MENU_TYPE" => "",
+				"USE_EXT" => "Y",
+				"DELAY" => "N",
+				"ALLOW_MULTI_SELECT" => "Y",
+				"MENU_CACHE_TYPE" => "N",
+				"MENU_CACHE_TIME" => "3600",
+				"MENU_CACHE_USE_GROUPS" => "Y",
+				"MENU_CACHE_GET_VARS" => ""
+			)
+		);?>
 		<!-- /.navbar-collapse -->
 	</div>
 	<!-- /.container -->

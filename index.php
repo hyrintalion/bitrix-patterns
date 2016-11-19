@@ -40,7 +40,7 @@ $APPLICATION->SetTitle("Главная");
                     <h2 class="brand-before">
                         <small>Welcome to</small>
                     </h2>
-                    <h1 class="brand-name">Business Casual</h1>
+                    <h1 class="brand-name">Bitrix patterns</h1>
                     <hr class="tagline-divider">
                     <h2>
                         <small>By
